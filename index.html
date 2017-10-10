@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="classApp">
+<head>
+  <title>Angular app</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="content/css/style.css">
+  <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="app/app.js"></script>
+</head>
+<body>
+<div ng-controller="classCtrl">
+
+ <!--  SIDE BAR START/END BUTTON  -->
+
+    <div class="row">
+        <div class="col-sm-2">
+            <nav class="nav-sidebar">
+                <ul class="nav">
+                    <li><a href=""><i class="glyphicon glyphicon-star-empty"></i> Nathaniel Zanzouri </a></li>
+                    <li class="nav-divider"></li>
+                    <li><i class="glyphicon glyphicon-play-circle""></i><button type="button" class="btn btn-success" ng-click="selectStart()" class="{{startcolor}}"> Start </button></a></li>
+                    <li class="nav-divider"></li>
+                    <li><i class="glyphicon glyphicon-off"></i><button type="button" class="btn btn-danger" ng-click="selectEnd()" class="{{endcolor}}"> End </button></li>
+                    <li class="nav-divider"></li>
+                    <li><i class="glyphicon glyphicon-star-empty"></i><button type="button" class="btn btn-primary" ng-click="selectGo()"> GO </button></li>
+                </ul>
+        </nav>
+    </div>
+
+ <!-- GRID TILE  -->
+      
+  <div class="wrapper">
+  <div  class="{{div.name}}" ng-repeat="div in divs" ng-click="selectDiv($index)" type="div" style="background-color:{{div.name}}, font-size: 2px;">{{div.text}}</div>
+</div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>

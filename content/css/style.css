@@ -1,0 +1,84 @@
+body {
+}
+
+.wrapper {
+  margin-top: 5%;
+  margin-left: 33%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(12, 26px);
+  grid-template-rows: 26px 26px 26px 26px 26px 26px 26px 26px 26px 26px 26px 26px;
+  grid-auto-flow: column;
+}
+
+.red {
+  background: linear-gradient(135deg,#ff4d4d,#ff8080);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.blue {
+  background: linear-gradient(135deg,#0677ce,#2b8dd8);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.yellow {
+  background: linear-gradient(135deg,yellow,yellow);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 65%;
+}
+
+.green {
+  background: linear-gradient(135deg,#42f486,#63f299);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 65%;
+}
+
+.orange {
+  background: linear-gradient(135deg,orange,orange);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 65%;
+}
+
+.purple {
+  background: linear-gradient(135deg,#942faa,#c44ddd);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.active {
+  background: linear-gradient(135deg,#4286f4,#4286f4);
+}
+
+.nav-sidebar { 
+    width: 100%;
+    padding: 8px 0; 
+    border-right: 1px solid #ddd;
+}
+.nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+    -webkit-border-radius: 4px 0 0 4px; 
+    -moz-border-radius: 4px 0 0 4px; 
+    border-radius: 4px 0 0 4px; 
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #428bca; 
+    color: #fff; 
+    text-shadow: 1px 1px 1px #666; 
+}
+.nav-sidebar .active a:hover {
+    background-color: #428bca;  
+
+
